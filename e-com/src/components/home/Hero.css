@@ -1,0 +1,65 @@
+.hero {
+    position: relative;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/hero_bg_new.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-sm) var(--spacing-sm) 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: var(--spacing-md);
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-md);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 480px;
+}
+
+.hero-btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 500px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
